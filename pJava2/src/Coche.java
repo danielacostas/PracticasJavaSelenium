@@ -79,13 +79,13 @@ public class Coche {
         if (getVelRecta() == 0) {
             return -1;
         }
-        return (k/getVelRecta())*3600;
+        return (k/getVelRecta())*3600; //Get the time needed in seconds
     }
 
     public int calculaCurva (int k){
         if (getVelCurva() == 0) {
             return -1;
         }
-        return (k/getVelCurva())*3600;
+        return (k/getVelCurva())*3600; //Get the time needed in seconds
     }
 }

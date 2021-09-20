@@ -14,7 +14,10 @@ public class Main {
         System.out.println("Establece una velocidad de curva para el coche:");
         int vc = lector.nextInt();
 
-        Coche c = new Coche(vr,vc);
+        Coche cr = new Coche(vr,vc, Colores.ROJO);
+        Camion cv = new Camion(vr,vc, Colores.VERDE);
+        Bicicleta ba = new Bicicleta(vr, vc, Colores.AZUL);
+        Tren t0 = new Tren(vr, vc, )
 
         while (!salir) {
 

@@ -1,20 +1,24 @@
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestClass {
 
-    Login login = new Login();
+    LoginChrome loginChrome = new LoginChrome();
+    LoginFirefox loginFirefox = new LoginFirefox();
 
     @Test
     public void testLogin(){
-        login.invokeFacebook();
-        login.login();
-        login.openProfile();
+        loginChrome.invokeFacebook();
+        loginChrome.login();
+        loginChrome.openProfile();
+        loginFirefox.invokeFacebook();
+        loginFirefox.login();
+        loginFirefox.openProfile();
     }
 
     @Test
     public void testLogout(){
-        login.logout();
+        loginChrome.logout();
+        loginFirefox.logout();
     }
 
 }

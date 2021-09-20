@@ -2,27 +2,30 @@ public class Vehiculo {
 
     private int velRecta;
     private int velCurva;
-    private String color;
+    private Colores color;
 
-    public Vehiculo() {
+    public Vehiculo(Colores color) {
         this.velRecta = 0;
         this.velCurva = 0;
+        this.color = color;
     }
 
-    public Vehiculo(int vr) {
+    public Vehiculo(int vr, Colores color) {
         if (vr >= 0) {
             this.velRecta = vr;
             this.velCurva = 1;
+            this.color = color;
         }
         else {
             System.out.println("La velocidad no puede ser un número negativo.");
         }
     }
 
-    public Vehiculo(int vr, int vc) {
+    public Vehiculo(int vr, int vc, Colores color) {
         if (vr >= 0 && vc >= 0) {
             this.velRecta = vr;
             this.velCurva = vc;
+            this.color = color;
         }
         else {
             System.out.println("La velocidad no puede ser un número negativo.");
@@ -50,11 +53,11 @@ public class Vehiculo {
         this.velCurva = velCurva;
     }
 
-    public String getColor() {
+    public Colores getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Colores color) {
         this.color = color;
     }
 

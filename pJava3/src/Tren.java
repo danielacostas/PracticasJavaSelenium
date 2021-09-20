@@ -5,11 +5,13 @@ public class Tren extends Vehiculo implements Interfaz{
     private Locomotora locomotora;
     private List<Vagon> vagones;
 
-    public Tren (Locomotora l){
+    public Tren (int vr, int vc, Colores color, Locomotora l){
+        super(vr, vc, color);
         this.locomotora = l;
     }
 
     public Tren(Locomotora l, List<Vagon> v) {
+        super(vr, vc, color);
         this.locomotora = l;
         this.vagones = v;
     }
