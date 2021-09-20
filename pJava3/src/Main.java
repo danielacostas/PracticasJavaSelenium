@@ -14,10 +14,16 @@ public class Main {
         System.out.println("Establece una velocidad de curva para el coche:");
         int vc = lector.nextInt();
 
+
         Coche cr = new Coche(vr,vc, Colores.ROJO);
         Camion cv = new Camion(vr,vc, Colores.VERDE);
         Bicicleta ba = new Bicicleta(vr, vc, Colores.AZUL);
-        Tren t0 = new Tren(vr, vc, )
+        Locomotora locomotora = new Locomotora(vr,vc, Colores.AMARILLO);
+        Vagon v1 = new Vagon(Colores.MARRON);
+        Vagon v2 = new Vagon(Colores.MORADO);
+
+        Tren t0 = new Tren(vr, vc, locomotora);
+
 
         while (!salir) {
 

@@ -2,9 +2,16 @@ import org.testng.annotations.Test;
 
 public class TestCLass {
 
-    @Test
-    public void testcase(){
+    Toolsqa toolsqa = new Toolsqa();
 
+    @Test
+    public void testCase(){
+
+        toolsqa.invokeBrowser();
+        toolsqa.getMenuList();
+        toolsqa.getSocialMedia();
+        toolsqa.searchPostman();
+        toolsqa.getArticleList();
     }
 
 }

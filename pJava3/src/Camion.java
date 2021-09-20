@@ -5,4 +5,8 @@ public class Camion extends Vehiculo implements Interfaz{
     public Camion(int vr, int vc, Colores color) {
         super(vr, vc, color);
     }
+
+    public int getNUM_RUEDAS() {
+        return NUM_RUEDAS;
+    }
 }
